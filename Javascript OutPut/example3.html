@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS OUTPUT</h1>
+    <hr>
+    <h1>Khả năng hiển thị javascript</h1>
+    <p>JS có thể hiện thị dữ liệu theo những cách khác nhau</p>
+    <ul>
+        <li>viết vào trong thẻ html thì sử dụng hàm innerHTML</li>
+        <li>viêt vào đầu ra html sử dụng document.write(</li>
+        <li>viêt để hiển thị ra cửa sổ sử dụng hàm window.alert()</li>
+        <li>viết ra màn hình console sử dụng console.log()</li>
+    </ul>
+    <h1>sử dụng hàm innerHTML</h1>
+    <p>để truy cập vào phần tử html , js có thể sử dụng phương thức document.getElementById(id)</p>
+    <p>id là một thuộc tính mặc định của phần tử html. thuộc tính innerHTML xác định nội HTML </p>
+    <div style="border: 1px solid back ; padding: 10px;">
+    
+        <h1>vidu</h1>
+        <p>5+6 = <p id='demo'></p></p>
+        <script>
+            document.getElementById("demo").innerHTML=5+6;
+        </script>
+    </div>
+    <h1>để tiện cho mục đích kiểm tra , ta có thể sử dụng document.write() cho thuận lợi</h1>
+    <p>lưu ý : khi sử dụng document.write() nó sẽ xóa hết html hiện tại</p>
+    <div style="border: 1px solid back ; padding: 10px;">
+        <h1>vidu</h1>
+        <script>
+            document.write(5+6);
+        </script>
+    <p>Test Xóa trang</p>
+    <button onclick="document.write(5+6)">Document.WriteChange</button>
+    <h1>sử dụng window.alert()</h1>
+    <p>bạn có thể sử dụng alert box để hiện thị dữ liệu</p>
+    <p>lưu ý windows mang phạm vi toàn cục vì vậy có thể sử dụng thẳng alert mà k cần gọi tới window</p>
+    <div style="border: 1px solid back ; padding: 10px;">
+
+        <script>
+            window.alert("5 + 6 = "+(5+6));
+            alert("5 * 6 = "+(5*6));
+        </script>
+    </div>
+    </div>
+    <h1>Sử dụng console.log()</h1>
+    <p>để sử dụng cho việc gỡ lỗi thì ta có thể gọi hàm console.log() trong màn hình hiển thị dữ liệu của trình duyệt </p>
+    
+    <script>
+        console.log("5 * 6 = "+(5*6));
+    </script>
+    <h1>Js print</h1>
+    <p>js không có bất kì hàm in nào mà ta phải truy cập các công cụ đầu ra . Nếu gọi đến windows print thì ta sẽ đc kết quả là gọi tới máy in</p>
+    <p>vidu</p>
+    <button onclick="window.print()">Click to print</button>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+</head>
+<body>
+    <h1>JavaScript có thể thay đổi nội dung HTML</h1>
+    GetElementByID() là một trong nhiều những phương thức js 
+    <div class="demo1" style="border: 1px solid black;padding: 5px;">
+    <h2>Js có thể thay đổi nội dung gì content</h2>
+    <p id="demop1">JS có thể thay đổi nội dung HTML</p>
+    <button type="button" onclick="document.getElementById('demop1').innerHTML = 'Hello JS' ">click here</button>
+    </div>
+    <h1>JavaScript chấp nhận cả dấu ngoặc đơn và ngoặc kép</h1>
+    <h1>JavaScript có thể thay đổi html giá trị thuộc tính</h1>
+    <div class="demo1" style="border: 1px solid black;padding: 5px;">
+        <p>trong ví dụ này js có thẻ thay đổ src thuộc tính(src) của thẻ ảnh </p>
+        <h2>Bật tắt bóng đèn</h2>
+        <img src="img/pic_bulboff.gif" alt="" id="thelight">
+        <button type="button" onclick="document.getElementById('thelight').src = 'img/pic_bulboff.gif' ">tắt đèn</button>
+        <button type="button" onclick="document.getElementById('thelight').src = 'img/pic_bulbon.gif' ">bật đèn</button>
+    </div>
+    <div class="demo1" style="border: 1px solid black;padding: 5px;">
+        <p>Có thể thay đổi thuộc tính của thẻ html , có thể thuộc tính khác của html </p>
+        <p>JS có thể thuộc tính (Css)</p>
+        <h2 id="changestyle">Bật tắt bóng đèn</h2>
+        <button type="button" onclick="document.getElementById('changestyle').style.fontSize = '35px' ">Đổi kích thước</button>
+    </div>
+    
+</body>
+</html>

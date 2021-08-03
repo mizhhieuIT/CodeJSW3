@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScipt Where to</title>
+    <script>
+        function MyFunction(){
+            document.getElementById("demo1").innerHTML = "two change" ; 
+        }
+    </script>
+</head>
+<body>
+    <h1>Thẻ Script</h1>
+    <p>trong HTML,code JavaScript  được thêm vào giữa 2 thẻ script </p>
+    <div style="border: 1px solid black;padding: 10px;">
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML="My Frist JS"
+        </script>
+    </div>
+    <p>ví dụ cũ js có thể sử dụng a thể loại thuộc tính thường thêm type = text/javascript Nhưng cái thuộc tính đó thì cũng k bắt buộc nhưng nó là mặc định của html</p>
+    <h1>Javascript Hàm và Sự kiện</h1>
+    <p>1 hàm javascript là một khối code , nó thực thi khi được gọi, nó sẽ được gọi khi mà một sự kiện xảy ra , như là lúc click vào 1 nút   </p>
+    <p>có thể đặt được nhiều thể script tùy ý </p>
+    <p>script có thể đặt trong body có thể đặt trong thẻ head</p>
+    <div style="border: 1px solid black;padding: 10px;">
+        <p id="demo1">one change</p>
+        <button type="button" onclick="MyFunction()">Click change</button>
+    </div>
+    <h1>JavaScipt đặt bên ngoài</h1>
+    <p>scripts có thể đặt ngoài file</p>
+    <div style="border: 1px solid black;padding: 10px;">
+        <p id="demo2">one change</p>
+        <button type="button" onclick="JSextarnail()">Click change</button>
+    </div>
+    <p>file js đặt ngoài có thể dùng đc cho nhiều trang khác nhau <br> nó có đuôi là .js , để đặt ngoài js , đặt tên của script trong src của thẻ scripts</p>
+    <h1>thuận lợi khi mà sử dụng js bên ngoài</h1>
+    <ul>
+        <li>nó ngăn cách html và code</li>
+        <li>nó làm cho js và html dễ đọc và bảo trì hơn</li>
+        <li>file js lưu trong bộ nhớ cached mà tăng tốc độ load trang</li>
+    </ul>
+</body>
+<script src="example2.js"></script>
+</html>
